@@ -1,0 +1,97 @@
+body {
+padding-top: 5%;
+background-color: #9bd8ea;
+margin:auto;
+}
+
+/*navigation menu source: http://cssmenumaker.com/menu/simple-responsive-menu*/
+nav {
+  background: #ffffff;
+  width: auto;
+}
+nav ul {
+  margin:0;
+  padding: 0, 5%, 0, 0;
+  line-height: 1;
+  zoom: 1.2;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  position: relative;
+  transition: color .25s;
+}
+nav ul li a:hover {
+  color: #333333;
+}
+nav ul li a:hover:before {
+  width: 20%;
+}
+nav ul li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+nav ul li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+nav ul li:last-child > a:after {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  nav ul li a:after {
+    display: none;
+  }
+  nav ul li a:before {
+    height: 1px;
+    background: #ffffff;
+    width: 100%;
+    opacity: .2;
+  }
+
+}
+
+img {
+height: 85%;
+width:100%;
+}

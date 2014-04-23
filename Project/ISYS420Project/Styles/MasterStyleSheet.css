@@ -1,0 +1,426 @@
+﻿/*BODIES*/
+
+body{
+    font-family:sans-serif;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    overflow:scroll;
+    background-color:#daedf3;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#defaultBody {
+    background-color:#9ad9ea;
+    padding-left:10px;
+    position : fixed;
+}
+
+/*NAVIGATION (source): http://cssmenumaker.com/menu/simple-responsive-menu */
+
+nav {
+    
+    width: auto;
+    padding-top: 2.5%;
+}
+nav ul {
+  margin:0;
+  padding: 0;
+  line-height: 1;
+  zoom: 1.2;
+  list-style: none;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  position: relative;
+  transition: color .25s;
+}
+nav ul li a:hover {
+  color: #333333;
+}
+nav ul li a:hover:before {
+  width: 100%;
+}
+nav ul li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+nav ul li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+nav ul li:last-child > a:after {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+nav ul li {
+    float: none;
+}
+
+nav ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav ul li a:after {
+    display: none;
+}
+
+nav ul li a:before {
+    height: 1px;
+    background: #ffffff;
+    width: 100%;
+    opacity: .2;
+}
+}
+
+/*IMAGES*/
+
+#logo {
+    height: 8em;
+    width: 30%;
+    float: right;
+}
+
+#sidecart img {
+    width:10%;
+}
+
+/*Default Image*/
+#rainUniImage {
+    margin: auto;
+    padding-top: 2.5%;
+    height: 49%;
+    width:100%;
+}
+
+/*Home Page Image*/
+#homepageBike {
+    float:left;
+
+}
+
+/*About Us Image*/
+
+.pictureUs {
+    height: 24em;
+}
+
+/*Products Images*/
+
+.productMainCategories {
+    height:20em;
+}
+
+.productMainCategories:hover {
+    box-shadow:7px 7px 7px rgba(0,0,0,0.5);
+    background-color:#78a6ab;
+}
+
+/*SubProduct Images*/
+.productSubCategories {
+    height:15em;
+    outline: 0 none;
+}
+
+.productSubCategories:hover {
+    box-shadow:3px 3px 3px rgba(0,0,0,0.5);
+    background-color:#78a6ab;
+}
+
+
+
+.subProductSelectedImage {
+    height: 20em;
+    padding-top: 10%;
+}
+
+/*SPANS*/
+
+#sidecart span {
+    font-weight: 400;
+    font-size:small;
+}
+
+/*DIVS*/
+
+/*MasterPage Divs*/
+
+#header{
+	padding-top:1em;
+	padding-left:4em;
+    background-color:#9ad9ea;
+    height: 8em;
+    width: 100%;
+	position:fixed;
+    z-index:1;
+}
+
+#sidecart{
+    margin-top: 9em;
+	padding-top:2em;
+	padding-left:1em;
+    background-color:#f2c1ba;
+    height:100%;
+    width:10%;
+    float:left;
+    position:fixed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#content{
+	padding-top:11em;
+    padding-bottom:7em;
+    padding-right:200em;
+    padding-left:3em;
+    margin-left:10%;
+    margin-right:10%;
+    background-color:#daedf3;
+    width: 85%;
+    float:left;   
+}
+
+#footer{
+	padding-top:1.5em;
+    background-color:#61c2d2;
+    height: 4em;
+    width: 100%;
+    clear:both;
+	bottom:0%;
+	text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    position:fixed;
+}
+
+/*Home Page Divs*/
+
+#newAccountCreationDiv {
+    float:left;
+    border: 2px solid black;
+}
+
+#returningUserLoginDiv{
+    float:right;
+    clear: both;
+    border: 2px solid black;
+}
+
+/*Products Divs*/
+
+#coolProducts, #seriousProducts, #shirtsAndCakeProducts {
+    float:left;
+    padding:2%;
+}
+
+/*Checkout Divs*/
+
+#checkoutStepOne, #checkoutStepTwo, #checkoutStepThree, #checkoutStepFour {
+    float:left;
+    margin: 1.5em;
+}
+
+/*SUB PRODUCT PAGES*/
+
+.wrapper {
+  position: relative;
+  overflow-x: auto;
+}
+
+/*Inspiration for tables (aka source): http://www.commentredirect.com/modern-table-css/ */
+
+.productDetails, .newAccountDetailsView {
+     margin-left: 3em;
+     margin-bottom: 0.5em;
+     font-family: Arial, sans-serif;
+     border: .3px solid #f2c1ba;
+     background: #f96e5b;
+}
+
+.newAccountDetailsView {
+    border: #daedf3;
+    background: #daedf3;
+    }
+
+.productDetails td, .newAccountDetailsView td {
+    color: #f7f7f7;
+	padding: 0.7em 1em 0.7em 1.15em;
+	font-size: 1.2em;
+}
+
+.newAccountDetailsView td {
+    color: #61c2d2;
+    font-weight: 700;
+    padding: 0px;
+}
+
+
+.productDetails tr:first-child td {
+    font-weight: 700;
+    color:black;
+}
+
+.detailsViewButtonPanel:last-child {
+    background: #daedf3;
+}
+
+.productDetails tr:hover {
+    background: #ff566f;
+}
+
+.detailsViewButtonPanel:hover {
+    background: #daedf3;
+}
+
+.productDetails tr:first-child:hover {
+    background:#ed4444;
+}
+
+.ErrorMessage {
+    font-size: 0.8em;
+    font-weight: 700;
+    color:#ed4444;
+    position:absolute;
+}
+
+/*BUTTONS More inspiration (button source): http://www.commentredirect.com/make-awesome-flat-buttons-css/ */
+
+.addToCartButton, .detailsViewButton {
+    margin-left: 3em;
+    margin-top: 0.5em;
+	margin-right: 0.5em;
+	padding: .875em 1.625em;
+    color: #f7f7f7;
+	font-size: 1em;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+    background-color: #f96e5b;
+}
+
+.detailsViewButton {
+    margin-left: 0em;
+    margin-right: 1.2em;
+    padding: .3em 1em;
+    font-size: .9em;
+    float: right;
+}
+
+.addToCartButton:active, .detailsViewButton:active {
+    box-shadow: 0px 1px 0px 0px #cd1313;
+}
+
+.addToCartButton:hover {
+	background-color: #fdb53a;
+}
+
+.detailsViewButton:hover {
+
+    background-color:#61c2d2;
+}
+
+.addToCartButton, .addToCartButton:hover, .addToCartButton:active, .detailsViewButton, .detailsViewButton:hover, .detailsViewButtonn:active {
+	outline: 0 none;
+	text-decoration: none;
+}
+
+/*About Us Divs*/
+
+#Alex , #Syrenah {
+    float:left;
+    padding:2%;
+}
+
+#captionAlex , #captionSyrenah {
+    float:left;
+    width: 10%;
+    padding-top:7%;
+    font-size:18px;
+}
+
+/*---------------------------------------------------MEDIA QUERIES---------------------------------------------------*/
+
+/* Laptop (1400px) - Alex's Laptop Width */
+@media (max-device-width: 1400px)  {
+
+/*Default Image*/
+#rainUniImage {
+    padding-top: 0%
+}
+
+/*Home Image*/
+#homepageBike {
+    height: 22em;
+    position: fixed;
+}
+
+/*About Us Image*/
+#cupcakesImage {
+    height:20em;
+}
+
+/*Products Images*/
+.productMainCategories {
+    height:15em;
+}
+
+.productMainCategories:hover {
+    box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+    background-color:#78a6ab;
+}
+
+/*About Us Divs*/
+#captionAlex , #captionSyrenah {
+    font-size:13px;
+}
+
+/*Products Divs*/
+
+#coolProducts, #seriousProducts, #shirtsAndCakeProducts {
+    float:left;
+    padding:1%;
+    padding-top:0%;
+}
+}
+
+
+

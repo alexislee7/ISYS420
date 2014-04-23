@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BikeryMasterPage.master.cs" Inherits="Masterpage_BikaryMasterPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>The Bikery</title>
+        <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+    <link href="../Styles/MasterStyleSheet.css" type="text/css" rel="stylesheet" />
+</head>
+<body >
+    <form id="form1" runat="server">
+        <div id="header"><img id="logo" src="../Pictures/BikaryLogo.png" />
+            <nav>
+                <ul>
+			        <li><a href="Home.aspx">Home</a></li> 
+			        <li><a href="Products.aspx">Products</a></li>
+                    <li><a href="ViewCart.aspx">View Cart</a></li>
+			        <li><a href="AboutUs.aspx">About Us</a></li>
+			        <li><a href="Contact.aspx">Contact</a></li>
+			    </ul>
+            </nav>
+        </div>
+        <div id="sidecart">Most Recently Added to Cart
+            <img src="../Pictures/cart.png" alt="Your Cart" title="Your Cart"/><br /><br />
+
+
+            
+            <asp:Image ID="Image1" runat="server" height="100px" Width="100px" ImageUrl="../Pictures/noitem.png" />
+
+            <asp:Image ID="Image2" runat="server"  height="100px" Width="100px" ImageUrl="../Pictures/noitem.png"/>
+            <asp:Image ID="Image3" runat="server"  height="100px" Width="100px" ImageUrl="../Pictures/noitem.png"/>
+            <br/>
+            <asp:Label ID="EmptyCartLabel" runat="server" Text="*Crickets chirping*" Visible="false"></asp:Label>
+
+            <a href="../WebPages/ViewCart.aspx">Veiw full cart!</a>
+
+            <%--<span>Your cart is<br /> currently empty. <br />*Crickets chirping*</span>--%>
+        </div>
+        
+       
+        
+        <div id="content" >
+               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+    
+
+        <div id="footer">&#169; The Bikery</div>
+    </form>
+</body>
+
+
+
+</html>
+
